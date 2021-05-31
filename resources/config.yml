@@ -1,0 +1,44 @@
+#     /\       | |   (_)                                   | | |  __ \                          | |
+#    /  \   ___| |__  _  _____   _____ _ __ ___   ___ _ __ | |_| |__) |_____      ____ _ _ __ __| |     Plugin By: Clarence2810
+#   / /\ \ / __| '_ \| |/ _ \ \ / / _ \ '_ ` _ \ / _ \ '_ \| __|  _  // _ \ \ /\ / / _` | '__/ _` |     Plugin Created: 10:56pm 5/30/2021 EST
+#  / ____ \ (__| | | | |  __/\ V /  __/ | | | | |  __/ | | | |_| | \ \  __/\ V  V / (_| | | | (_| |     Support me by donating: https://paypal.me/clarencemine
+# /_/    \_\___|_| |_|_|\___| \_/ \___|_| |_| |_|\___|_| |_|\__|_|  \_\___| \_/\_/ \__,_|_|  \__,_|                                                                                                  
+#
+# Source: https://github.com/pmmp/PocketMine-MP/blob/stable/src/pocketmine/Achievement.php#L34
+# Types of Achievements:
+# - mineWood
+# - buildWorkBench
+# - buildPickaxe
+# - buildFurnace
+# - acquireIron
+# - buildHoe
+# - makeBread
+# - bakeCake
+# - buildBetterPickaxe
+# - buildSword
+# - diamonds
+
+mineWood: # Type of Achievement
+  item: # (optional)
+    - id: 1 # item id
+      meta: 0 # item meta (optional, default 0)
+      count: 5 # item count (optional, default 1)
+      name: "Glowyyy Stoneyyyy" # item name (optional, & as color key, default original name)
+      lore: # (optional, & as color key, default no lore)
+        - "Lore 1" # 
+        - "Lore 2"
+      enchantment: # (optional, default no enchantment)
+        - id: 1 # enchantment id
+          level: 5 # enchantment level (optional, default 1)
+    - id: 3
+      name: "Dirt but better"
+      enchantment:
+        - id: 1
+        - id: 4
+          level: 10
+        - id: 3
+          level: 20
+    - id: 256
+  command: # (optional, default no command)
+    - "say {player} get the WOOOOOD" # Commands You can use {player} as the player who got that achievement
+    - "tell {player} Congrats!"
